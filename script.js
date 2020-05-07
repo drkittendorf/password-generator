@@ -15,7 +15,7 @@ function wordNumbs (){
     console.log(numCar);    
     canConfirm();  // move it on
 }
-}
+} //End of wordNumbs
 
 function canConfirm () {  // Confirming character inclusion starts here
   var cfLowr = confirm("Would you like to include lower case characters in your password?");
@@ -26,10 +26,18 @@ function canConfirm () {  // Confirming character inclusion starts here
   console.log(cfCaps);
   console.log(cfNumb);
   console.log(cfSpec);
-  /* while (cfLowr &&  && && && ) */
-
-
-}
+  while (cfLowr == false && cfCaps == false && cfNumb == false && cfSpec == false) {
+  alert("Please select at least one of the following for better security!");
+       cfLowr = confirm("Would you like to include lower case characters in your password?");
+       cfCaps = confirm("Would you like to include upper case characters in your password?");
+       cfNumb = confirm("Would you like to include numbers in your password?");
+       cfSpec = confirm("Would you like to include special characters in your password?");
+       console.log(cfLowr); // logging values in console again
+       console.log(cfCaps);
+       console.log(cfNumb);
+       console.log(cfSpec);
+  }
+} // End of canConfirm
 // selections have been made now lets randomize those digis
 
 

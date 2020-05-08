@@ -2,22 +2,18 @@
 /*
 var generateBtn = document.querySelector("#generate"); 
 */
-wordNumbs (); // Calls 1st function
-
-function wordNumbs (){
-    let numCar = prompt("How many characters would you like your password to have? Please enter a number between 8 and 128.");
-        console.log(numCar); // establishes number of total characters
+ 
+let numCar = prompt("How many characters would you like your password to have? Please enter a number between 8 and 128.");
+  console.log(numCar); // establishes number of total characters
   //now lets validate
   while (numCar < 8 || numCar > 128) {
          numCar = prompt("How many characters would you like your password to have? Please enter a number between 8 and 128.")
-}   
-    if (numCar > 7) {
-    console.log(numCar);    
-    canConfirm();  // move it on
-}
-} //End of wordNumbs
+   }   
+    if (numCar > 7 && numCar) {
+    console.log(numCar);   // move it on
+   }
 
-function canConfirm () {  // Confirming character inclusion starts here
+ // Confirming character inclusion starts here
   var cfLowr = confirm("Would you like to include lower case characters in your password?");
   var cfCaps = confirm("Would you like to include upper case characters in your password?");
   var cfNumb = confirm("Would you like to include numbers in your password?");
@@ -32,24 +28,48 @@ function canConfirm () {  // Confirming character inclusion starts here
        cfCaps = confirm("Would you like to include upper case characters in your password?");
        cfNumb = confirm("Would you like to include numbers in your password?");
        cfSpec = confirm("Would you like to include special characters in your password?");
-       console.log(cfLowr); // logging values in console again
+       console.log(cfLowr); // logging validated values in console
        console.log(cfCaps);
        console.log(cfNumb);
        console.log(cfSpec);
-  }
-} // End of canConfirm
+    }     
+  if (cfLowr == "true" || cfCaps == "true" || cfNumb == "true" || cfSpec == "true")  {
+    console.log("hello...next step please");    
+    
+    }          
+let drawPool = [];
+cfFilter ();
+
+    //populate an array from which we can draw randomly across 
+function cfFilter () {
+if (cfLowr == true) drawPool.push('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z')
+console.log(drawPool);
+if (cfCaps == true) drawPool.push('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z')
+console.log(drawPool);
+if (cfNumb == true) drawPool.push('0','1','2','3','4','5','6','7','8','9')
+console.log(drawPool);
+if (cfSpec == true) drawPool.push('!','@','#','$','%','^','&','*','(',')','?','>','<','=','-','+','_',',','{','}','/',';',':','~')
+console.log(drawPool);
+}
 // selections have been made now lets randomize those digis
 
 
+/*
 
+for (var i = 0; i < (numCar); i++) {  // Generate a random number between 1 and 10
+  // Math.floor will round down, meaning we would get a number between 0 and 9, so we'll always add 1 to bump it up.
+  var num = Math.floor(Math.random() * (10));
 
+  // Display in console
+  console.log(num);
+}
+
+['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
 
 
 
 
 /*
-if || cfLower || cfCaps || cfNumb  || cfSpec !=== true
-
 then writePassword(); using variables  
 
 else return ' Please respond "Yes" to at least on type of character.'
@@ -61,6 +81,17 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+// Loop 10 times
+      for (var i = 0; i < 10; i++) {
+        // Generate a random number between 1 and 10
+        // Math.floor will round down, meaning we would get a number between 0 and 9, so we'll always add 1 to bump it up.
+        var num = Math.floor(Math.random() * 10) + 1;
+
+        // Display in console
+        console.log(num);
+      }
+
+
 
 }
 //Arrays
@@ -68,13 +99,7 @@ const specChar = ['!','@','#','$','%','^','&','*','(',')','?','>','<','=','-','+
 
 
 //Functions
-function pwdChars () {
- if (<129 && 8>);
-console.log ("OK");
-else 
-console.log ("nope");
 
-}
 
 
 

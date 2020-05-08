@@ -2,7 +2,7 @@
 /*
 var generateBtn = document.querySelector("#generate"); 
 */
- 
+ //GOTTA ADD SOMETHING TO THIS TO RESPOND TO NON NUMBER CHARACTERS
 let numCar = prompt("How many characters would you like your password to have? Please enter a number between 8 and 128.");
   console.log(numCar); // establishes number of total characters
   //now lets validate
@@ -35,25 +35,33 @@ let numCar = prompt("How many characters would you like your password to have? P
     }     
   if (cfLowr == "true" || cfCaps == "true" || cfNumb == "true" || cfSpec == "true")  {
     console.log("hello...next step please");    
-    
     }          
+
+    //populate an array from which we can draw randomly from
 let drawPool = [];
-cfFilter ();
-
-    //populate an array from which we can draw randomly across 
-function cfFilter () {
 if (cfLowr == true) drawPool.push('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z')
-console.log(drawPool);
+/* console.log(drawPool); */
 if (cfCaps == true) drawPool.push('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z')
-console.log(drawPool);
+/* console.log(drawPool);*/
 if (cfNumb == true) drawPool.push('0','1','2','3','4','5','6','7','8','9')
-console.log(drawPool);
+/* console.log(drawPool);*/
 if (cfSpec == true) drawPool.push('!','@','#','$','%','^','&','*','(',')','?','>','<','=','-','+','_',',','{','}','/',';',':','~')
-console.log(drawPool);
-}
+ console.log(drawPool);
+
 // selections have been made now lets randomize those digis
+let passWord = []; // array to store randomized strings
 
-
+ for (var i = 0; i < numCar; i++) { //loops according to the selected password length
+   /*   console.log(drawPool[i]); */
+  let num = Math.floor(Math.random() * (drawPool.length)); //generate a random index position for array of selected characters
+      console.log(num);
+  let x = parseInt (num);
+      console.log(typeof x);
+  let swOrd = drawPool.slice(x,x); ///gotta figure this part  out still
+  let y = (swOrd.toString());
+  passWord.push(y);
+   } 
+console.log(passWord)
 /*
 
 for (var i = 0; i < (numCar); i++) {  // Generate a random number between 1 and 10
@@ -63,11 +71,6 @@ for (var i = 0; i < (numCar); i++) {  // Generate a random number between 1 and 
   // Display in console
   console.log(num);
 }
-
-['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
-
-
-
 
 /*
 then writePassword(); using variables  

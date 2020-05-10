@@ -27,6 +27,16 @@ console.log(numCar);
         let array = [];
         let drawPool = [];
           var cfLowr = confirm("Would you like to include lower case characters in your password?");
+          var cfCaps = confirm("Would you like to include UPPER case characters in your password?");
+          var cfNumb = confirm("Would you like to include numbers in your password?");
+          var cfSpec = confirm("Would you like to include SPECIAL characters in your password? Like &#$%?");
+          while (cfLowr == false && cfCaps == false && cfNumb == false && cfSpec == false) { 
+            alert("Please select at least one of the following in order to generate your password!");
+              cfLowr = confirm("Would you like to include lower case characters in your password?");
+              cfCaps = confirm("Would you like to include upper case characters in your password?");
+              cfNumb = confirm("Would you like to include numbers in your password?");
+              cfSpec = confirm("Would you like to include special characters in your password?");
+          }  
           if (cfLowr == true) {
           drawPool.push('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'); 
           array.push("true");
@@ -35,7 +45,7 @@ console.log(numCar);
           } 
         console.log(array[0]);
           
-          var cfCaps = confirm("Would you like to include UPPER case characters in your password?");
+          
           if (cfCaps == true) {
           drawPool.push('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
           array.push("true");
@@ -44,7 +54,7 @@ console.log(numCar);
           }
         console.log(array[1]);
           
-          var cfNumb = confirm("Would you like to include numbers in your password?");
+          
           if (cfNumb == true) {
           drawPool.push('0','1','2','3','4','5','6','7','8','9');  
           array.push("true");
@@ -53,16 +63,18 @@ console.log(numCar);
           }
         console.log(array[2]);
           
-          var cfSpec = confirm("Would you like to include SPECIAL characters in your password? Like &#$%?");
+          
           if (cfSpec == true) {
-          drawPool.push('!','@','#','$','%','^','&','*','(',')','?','>','<','=','-','+','_',',','{','}','/',';',':','~');  
+          drawPool.push('!','@','#','$','%','^','&','*','(',')','?','>','<','=','-','+','_','{','}','/',';',':','~');  
           array.push("true");
           } else {
           array.push("false")
           }
+                     
+        if (cfLowr == "true" || cfCaps == "true" || cfNumb == "true" || cfSpec == "true") {
   console.log(array[3]); 
-  console.log(drawPool) 
-                  randOmizer();
+  console.log(drawPool) }
+            randOmizer();
    // end of confirm cars
   
                   function randOmizer() {

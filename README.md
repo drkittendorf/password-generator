@@ -7,11 +7,11 @@
 - [FUTURE DEVELOPMENT](#FUTURE-DEVELOPMENT)
 
 <br>
+<br>
 
 ---
-
-
 ## CONTRIBUTOR(s)
+
 Dale Kittendorf
 
 <br>

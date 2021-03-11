@@ -1,4 +1,4 @@
-# 03PasswordGenerator
+# PasswordGenerator
 
 - [CONTRIBUTOR(S)](#CONTRIBUTOR(s))
 - [USER STORY](#USER-STORY)

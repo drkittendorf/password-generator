@@ -1,4 +1,4 @@
-# PasswordGenerator
+# Password Generator
 
 - [CONTRIBUTOR(S)](#CONTRIBUTOR(s))
 - [USER STORY](#USER-STORY)
@@ -33,10 +33,10 @@ to select at least one character type.
 
 ## DESCRIPTION
 
-Creates Password after prompting for criteria.
-Prompt for number of characters.
-Completed confirm for upper and lower characters, numbers and special characters.
-Validates criteria.
+- Creates Password after prompting for criteria.
+- Prompt for number of characters.
+- Completed confirm for upper and lower characters, numbers and special characters.
+- Validates criteria.
 
 <br>
 

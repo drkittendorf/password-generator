@@ -1,6 +1,6 @@
 # Password Generator
 
-- [CONTRIBUTOR(s)](#CONTRIBUTOR(s))
+- [CONTRIBUTOR(S)](#CONTRIBUTOR(S))
 - [USER STORY](#USER-STORY)
 - [DESCRIPTION](#DESCRIPTION)
 - [REFERENCE LINKS](#REFERENCE-LINKS)
@@ -10,7 +10,7 @@
 <br>
 
 ---
-## CONTRIBUTOR(s)
+## CONTRIBUTOR(S)
 
 Dale Kittendorf
 

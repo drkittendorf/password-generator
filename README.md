@@ -1,6 +1,6 @@
 # Password Generator
 
-- [CONTRIBUTOR(S)](#CONTRIBUTOR(s))
+- [CONTRIBUTOR(S)](#CONTRIBUTORS)
 - [USER STORY](#USER-STORY)
 - [DESCRIPTION](#DESCRIPTION)
 - [REFERENCE LINKS](#REFERENCE-LINKS)
@@ -11,7 +11,7 @@
 <br>
 
 ---
-## CONTRIBUTOR(s)
+## CONTRIBUTORS
 
 Dale Kittendorf
 
@@ -47,9 +47,9 @@ to select at least one character type.
 
 ## REFERENCE LINKS
 
-* https://drkittendorf.github.io/03PasswordGenerator/
+* https://drkittendorf.github.io/password-generator/
 
-* https://github.com/drkittendorf/03PasswordGenerator
+* https://github.com/drkittendorf/password-generator/
 
 ---
 
